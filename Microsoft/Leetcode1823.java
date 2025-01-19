@@ -2,7 +2,7 @@
 import java.util.*;
 
 public class Leetcode1823 {
-    //6Company 30Days Challenge -----> Day1
+    //6Company 30Days Challenge
     //Who wiil win ----> Leetcode 1823
 
     public static int findTheWinner(int n, int k) {
