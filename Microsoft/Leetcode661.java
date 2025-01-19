@@ -1,5 +1,6 @@
 public class Leetcode661 {
-      
+      //6Company 30Days Challenge
+      //Leetcode Question 661 -> Image Smoother
 
         public static int[][] imageSmoother(int[][] img) {
             int rows = img.length;
