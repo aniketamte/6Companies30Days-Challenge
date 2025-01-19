@@ -1,6 +1,6 @@
 
 public class Leetcode168 {
-    //6Company #0 Days Challenge 
+    //6Company 30 Days Challenge 
     //Leetcode 168
 
     public static String convertToTitle(int columnNumber) {
