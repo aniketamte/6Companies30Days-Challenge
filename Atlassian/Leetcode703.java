@@ -1,5 +1,5 @@
 
-import java.util.PriorityQueue;
+import java.util.*;
 
 
 public class Leetcode703 {
@@ -8,7 +8,7 @@ public class Leetcode703 {
 
     PriorityQueue<Integer> pq;
     int k;
-    public static KthLargest(int k, int[] nums) {
+    public Leetcode703(int k, int[] nums) {
       this.k = k;
       pq = new PriorityQueue<>();
       for(int num : nums){
@@ -16,8 +16,14 @@ public class Leetcode703 {
       }
     }
 
-    public static int add(int val) {
-
+    public int add(int val) {
+      if(pq.size()<k || val>pq.peek()){
+            pq.offer(val);
+            if(pq.size()>k){
+                  pq.poll();
+            }
+      }
+      return pq.peek();
     }
 
     public static void main(String[] args) {
